@@ -1,5 +1,19 @@
+html {
+  scroll-behavior: smooth; /* Aplica el desplazamiento suave */
+  scroll-padding-top: 60px; /* Ajusta este valor al alto de tu header */
+}
+
 .App {
   text-align: center;
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #e9eaee;
+  transition: all 1.0s;
 }
 
 .App-logo {
@@ -14,14 +28,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #2b323f;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #e9eaee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para destacar el nav */
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .App-link {
@@ -36,3 +55,398 @@
     transform: rotate(360deg);
   }
 }
+
+.Navigation-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.nav_A{
+  text-decoration: none;
+  color: #e9eaee;
+  margin: 1vmax;
+}
+.nav_A > hr, .scroll-hr{
+  width: 100%;
+  opacity: 0;
+  border-color: gold;
+  margin-top: 0px;
+  transition: opacity 0.6s;
+}
+
+.scroll-button.highlight{
+  color: white;
+}
+
+.nav_A:hover > hr {
+  opacity: 1;
+  animation-name: width_increaser;
+  animation-duration: 0.6s;
+}
+
+
+@keyframes width_increaser {
+  from {width: 0%;}
+  to {width: 100%;}
+}
+
+/* Footer */
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #2b323f;
+  color: #e9eaee;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Open Sans', sans-serif; /* Ejemplo de Google Fonts */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.social-links li {
+  display: inline;
+}
+
+.social-links a {
+  color: #e9eaee;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: gold; /* Color dorado al hacer hover */
+}
+
+.app-main{
+  background-color: #282a35; /* Color dorado al hacer hover */
+  min-height: 90vh;
+  width: 100%;
+  padding-top: 50px;  /* Altura del header */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+
+/*content card*/
+.content-card {
+  display: flex;           /* Flexbox para el contenedor */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical */
+  position: relative;      /* Para permitir el control del apilamiento con z-index */
+  background-color: #3d4a61;
+  width: 250px;
+  height: 250px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 6px black;
+  padding: 10px;
+  
+  border: 2px solid rgba(255, 217, 0, 0);
+}
+
+.content-card a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+
+.content-card > img {
+  position: absolute;      /* Colocamos la imagen de manera absoluta */
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 1;
+  object-fit: contain;
+  pointer-events: none;    /* Ignora eventos del ratón */
+  z-index: 0;              /* Coloca la imagen detrás */
+  transition: all 0.6s;
+}
+
+.content-card > .card-text {
+  position: relative;      /* Necesitamos esto para que z-index tenga efecto */
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  
+  z-index: 1;              /* Coloca el texto delante de la imagen */
+  transition: opacity 0.6s;
+  color: #e9eaee;
+}
+
+.content-card > .card-text > p{
+  margin-top: 0;
+  overflow: auto;
+  width: 100%;
+  height: 80%;
+  
+}
+
+.content-card > .card-text > h2{
+  color: gold;
+  
+}
+
+.content-card:hover > .card-text {
+  width: 100%;
+  height: 100%;
+  opacity:1;
+  transition: opacity 0.6s;
+}
+
+.content-card:hover > img{
+  opacity:0.3;
+  filter: brightness(50%) blur(6px);
+}
+
+.content-card:hover{
+  border-color: gold;
+}
+
+/*section contents*/
+.sections-contents-home{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+}
+.sections-contents{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 50%;
+}
+
+.sections-contents > h1 > hr{
+  border-color: silver;
+}
+
+.sections-contents > section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr)); /* Columnas dinámicas */
+  gap: 10px; /* Espacio entre los elementos */
+  padding: 16px; /* Espacio dentro del contenedor */
+  justify-items: center; /* Centrar los elementos dentro de sus celdas */
+}
+
+
+/*side-icon*/
+.side-icon{
+  justify-self: start;
+  width: 50px;
+  height: 50px;
+  border: solid 2px gold;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.side-icon > img{
+  width: 100%;
+  height: 100%;
+}
+/*home*/
+.profile-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: baseline;
+}
+
+
+.side-icon-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.icon-profile{
+  justify-self: start;
+  width: 300px;
+  height: 300px;
+  border: solid 2px gold;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.icon-profile > img{
+  width: 100%;
+  height: 100%;
+}
+.social-profile{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+
+}
+.social-profile > a{
+  text-align: end;
+}
+.high-span{
+  color: gold;
+}
+
+/*cv*/
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.left-column{
+width: 60%;
+}
+.right-column {
+  width: 40%;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 0;
+}
+.skill-bar {
+  margin-bottom: 10px;
+  border-radius: 20px;
+  text-align: left;
+  line-height: 20px;
+  background-color: #33332d;
+  padding: 0px;
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid gold;
+}
+
+.skill-bar span {
+  font-style: italic;
+  display: block;
+  color:#ffffff;
+  background-color: goldenrod;
+  padding: 0px;
+    padding-left: 10px;
+}
+
+.sections-contents > .cd-section{
+  display: flex;
+  width: 100%;
+  background: #3d4a61;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 2px;
+  box-shadow: 0px 1px 6px black;
+  width: 100%;
+}
+
+.left-column{
+  text-align: left;
+}
+.right-column{
+  text-align: end;
+}
+
+/*form*/
+
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  justify-items: center;
+}
+
+.contactForm  div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.contactForm label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contactForm textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contactForm button {
+  min-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: goldenrod;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contactForm button:hover {
+  color: black;
+  background-color: gold;
+}
+
+.contact-data{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*GodotGame*/
+.GameContent{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 70px;
+  border: solid 2px gold;
+  box-shadow: 0px 1px 6px black;
+  border-radius: 4px;
+}
+
