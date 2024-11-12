@@ -14,8 +14,9 @@ export function LinkBorderLine({ href, content }) {
   )
 }
 
-export function ContentCard({ imgPath = "", title = "", content = "", href = "" }) {
+export function ContentCard({ imgPath = "", title = "", content = "", href = "", useInterFiles = false }) {
   const link = href != "" ? <Link to={href}></Link> : "";
+  const imgurl = useInterFiles == false ? imgPath: process.env.PUBLIC_URL + imgPath;
   return (
     <article className='content-card'>
       <div className='card-text'>
@@ -23,7 +24,7 @@ export function ContentCard({ imgPath = "", title = "", content = "", href = "" 
         <p>{content}</p>
       </div>
       {link}
-      <img src={`${imgPath}`} alt={`${title}`} ></img>
+      <img src={`${imgurl}`} alt={`${title}`} ></img>
     </article>
   )
 }

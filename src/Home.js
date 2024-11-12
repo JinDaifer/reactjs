@@ -131,7 +131,7 @@ function Home() {
     <div className="App">
       <header className="App-header">
         <side className='side-icon'>
-          <img src='./img/Icon.png' className='use-icon' alt='Profile icon'></img>
+          <img src= {process.env.PUBLIC_URL + '/img/Icon.png'} className='use-icon' alt='Profile icon'></img>
         </side>
         <nav className="Navigation-container">
           <LinkBorderLine href="#home-title" content="Home" />
@@ -155,7 +155,7 @@ function Home() {
                 <LinkBorderLine href="https://x.com/JinDaifer" content="Twitter" />
               </section>
               <section className='icon-profile'>
-                <img src='./img/mi_s_face.jpg' className='use-icon' alt='Profile icon'></img>
+                <img src={process.env.PUBLIC_URL + '/img/mi_s_face.jpg'} className='use-icon' alt='Profile icon'></img>
               </section>
             </side>
             <side>
@@ -188,7 +188,7 @@ function Home() {
           <h1>Features <hr></hr> <span className='high-span'>What I know</span>  </h1>
 
           <section>
-            <ContentCard imgPath="./img/godot_icon.png" title="Godot Engine" content="Creating immersive, high-performance games and interactive experiences with Godot Engine, leveraging GDScript for dynamic gameplay, 2D rendering, and intuitive scene management. Designed for rapid prototyping and scalable project development." />
+            <ContentCard imgPath="/img/godot_icon.png" title="Godot Engine" content="Creating immersive, high-performance games and interactive experiences with Godot Engine, leveraging GDScript for dynamic gameplay, 2D rendering, and intuitive scene management. Designed for rapid prototyping and scalable project development." useInterFiles={true} />
             <ContentCard imgPath="https://cdn-icons-png.flaticon.com/512/11096/11096817.png" title="Web App Development" content="Building robust and scalable web applications tailored to your business needs using modern frameworks like React and Laravel." />
             <ContentCard imgPath="https://nyusoft.com/wp-content/themes/twentytwentyone-child/images/services/UI-UX-design-services/banner-image-ui-ux.png" title="UX/UI Design" content="Designing intuitive and engaging user interfaces and experiences that align with your brand and improve customer satisfaction." />
             <ContentCard imgPath="https://cdn-icons-png.flaticon.com/512/6220/6220416.png" title="Database Management" content="Ensuring efficient and secure database management with expertise in MySQL, MongoDB, and data optimization techniques." />
@@ -207,24 +207,24 @@ function Home() {
         <section className='sections-contents' id='project-title'>
           <h1>Projects <hr></hr> <span className='high-span'>What I Do</span>  </h1>
           <section>
-            <ContentCard imgPath="./img/acce_leralia.png" title="Mentoring Management" content="Connect mentors and mentees through streamlined scheduling and mentorship management. Book sessions, track progress, and maximize growth with tailored mentor-mentee interactions." />
-            <ContentCard imgPath="./img/f_run.gif" title="Journey to be a god: Tower of time" content="An RPG I'm working on, set in a Chinese fantasy world. I don't think I'll finish it anytime soon, but I believe I'm on the right track." />
-            <ContentCard imgPath="./img/chess.png" title="Chess" content="It was the first project I completed, where you can finish a game normally. I believe I remember that you can't even restart the game without closing it, and that the AI is broken and enabled by default. !Click to play¡" href='Chess' />
+            <ContentCard imgPath="/img/acce_leralia.png" title="Mentoring Management" content="Connect mentors and mentees through streamlined scheduling and mentorship management. Book sessions, track progress, and maximize growth with tailored mentor-mentee interactions." useInterFiles={true}/>
+            <ContentCard imgPath="/img/f_run.gif" title="Journey to be a god: Tower of time" content="An RPG I'm working on, set in a Chinese fantasy world. I don't think I'll finish it anytime soon, but I believe I'm on the right track." useInterFiles={true}/>
+            <ContentCard imgPath="/img/chess.png" title="Chess" content="It was the first project I completed, where you can finish a game normally. I believe I remember that you can't even restart the game without closing it, and that the AI is broken and enabled by default. !Click to play¡" href='Chess' useInterFiles={true}/>
           </section>
         </section>
 
         <section className='sections-contents' id='art-title'>
           <h1>Art <hr></hr> <span className='high-span'>My drawing collection</span>  </h1>
           <section>
-            <ContentCard imgPath="./img/Han li.png" title="Han li" content="A fanart of 'Record of a Deadly Journey to Immortality'" />
-            <ContentCard imgPath="./img/Lady Lin.png" title="Lady Lin" content="A fanart of... It was a long time ago" />
-            <ContentCard imgPath="./img/Rage_luo_feng_V2.png" title="Luo Feng" content="My OC" />
-            <ContentCard imgPath="./img/Liu Lian - sleeping.png" title="Liu Lian - sleeping" content="My OC of a random character" />
-            <ContentCard imgPath="./img/TimeDoghuter2.png" title="Time Doghuter" content="My OC of a random character" />
-            <ContentCard imgPath="./img/XenaPrincess.png" title="Xena Princess" content="Random character" />
-            <ContentCard imgPath="./img/the_frozen_queen.png" title="The frozen queen" content="My OC of a random character" />
-            <ContentCard imgPath="./img/Liu Lian.png" title="Liu Lian" content="My OC of a random character" />
-            <ContentCard imgPath="./img/emperatriz_Ren Zhihao.png" title="Empress Ren Shihao" content="My OC of a random character" />
+            <ContentCard imgPath="/img/Han li.png" title="Han li" content="A fanart of 'Record of a Deadly Journey to Immortality'" useInterFiles={true}/>
+            <ContentCard imgPath="/img/Lady Lin.png" title="Lady Lin" content="A fanart of... It was a long time ago" useInterFiles={true}/>
+            <ContentCard imgPath="/img/Rage_luo_feng_V2.png" title="Luo Feng" content="My OC" useInterFiles={true}/>
+            <ContentCard imgPath="/img/Liu Lian - sleeping.png" title="Liu Lian - sleeping" content="My OC of a random character" useInterFiles={true}/>
+            <ContentCard imgPath="/img/TimeDoghuter2.png" title="Time Doghuter" content="My OC of a random character" useInterFiles={true}/>
+            <ContentCard imgPath="/img/XenaPrincess.png" title="Xena Princess" content="Random character" useInterFiles={true}/>
+            <ContentCard imgPath="/img/the_frozen_queen.png" title="The frozen queen" content="My OC of a random character" useInterFiles={true}/>
+            <ContentCard imgPath="/img/Liu Lian.png" title="Liu Lian" content="My OC of a random character" useInterFiles={true}/>
+            <ContentCard imgPath="/img/emperatriz_Ren Zhihao.png" title="Empress Ren Shihao" content="My OC of a random character" useInterFiles={true}/>
           </section>
         </section>
 

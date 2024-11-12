@@ -7,7 +7,7 @@ function GodotGame() {
     <div className='GameContent'  style={{ width: '70%', height: '600px', overflow: 'hidden' }}>
       <h1>Chess</h1>
       <iframe
-        src={'./chess_game/AjedrezDaifer.html'}
+        src={process.env.PUBLIC_URL + '/chess_game/AjedrezDaifer.html'}
         title="Godot Game"
         style={{ width: '100%', height: '100%', border: 'none' }}
       />
@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <side className='side-icon'>
-          <img src='./img/Icon.png' className='use-icon' alt='Profile icon'></img>
+          <img src= {process.env.PUBLIC_URL + '/img/Icon.png'} className='use-icon' alt='Profile icon'></img>
         </side>
         <nav className="Navigation-container">
           <LinkBorderLineRouter href="/#home-title" content="Home" smooth={true}/>

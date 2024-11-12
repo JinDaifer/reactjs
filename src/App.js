@@ -8,6 +8,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path='/reactjs.git' element={<Home />}>
+        </Route>
         <Route path='/' element={<Home />}>
         </Route>
         <Route path='/Chess' element={<Chess />}>
