@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/reactjs.git/static/css/main.ca0647a1.chunk.css",
-    "main.js": "/reactjs.git/static/js/main.88600f67.chunk.js",
-    "main.js.map": "/reactjs.git/static/js/main.88600f67.chunk.js.map",
+    "main.js": "/reactjs.git/static/js/main.54aecfa9.chunk.js",
+    "main.js.map": "/reactjs.git/static/js/main.54aecfa9.chunk.js.map",
     "runtime-main.js": "/reactjs.git/static/js/runtime-main.0de08787.js",
     "runtime-main.js.map": "/reactjs.git/static/js/runtime-main.0de08787.js.map",
-    "static/js/2.b1bf9d46.chunk.js": "/reactjs.git/static/js/2.b1bf9d46.chunk.js",
-    "static/js/2.b1bf9d46.chunk.js.map": "/reactjs.git/static/js/2.b1bf9d46.chunk.js.map",
+    "static/js/2.c8b25181.chunk.js": "/reactjs.git/static/js/2.c8b25181.chunk.js",
+    "static/js/2.c8b25181.chunk.js.map": "/reactjs.git/static/js/2.c8b25181.chunk.js.map",
     "static/js/3.bc5711c0.chunk.js": "/reactjs.git/static/js/3.bc5711c0.chunk.js",
     "static/js/3.bc5711c0.chunk.js.map": "/reactjs.git/static/js/3.bc5711c0.chunk.js.map",
     "index.html": "/reactjs.git/index.html",
-    "precache-manifest.81214ef57db3dec548d103b0605605a4.js": "/reactjs.git/precache-manifest.81214ef57db3dec548d103b0605605a4.js",
+    "precache-manifest.0bb8670a9d966634d5c9f20b1101ec97.js": "/reactjs.git/precache-manifest.0bb8670a9d966634d5c9f20b1101ec97.js",
     "service-worker.js": "/reactjs.git/service-worker.js",
     "static/css/main.ca0647a1.chunk.css.map": "/reactjs.git/static/css/main.ca0647a1.chunk.css.map",
-    "static/js/2.b1bf9d46.chunk.js.LICENSE.txt": "/reactjs.git/static/js/2.b1bf9d46.chunk.js.LICENSE.txt"
+    "static/js/2.c8b25181.chunk.js.LICENSE.txt": "/reactjs.git/static/js/2.c8b25181.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0de08787.js",
-    "static/js/2.b1bf9d46.chunk.js",
+    "static/js/2.c8b25181.chunk.js",
     "static/css/main.ca0647a1.chunk.css",
-    "static/js/main.88600f67.chunk.js"
+    "static/js/main.54aecfa9.chunk.js"
   ]
 }
