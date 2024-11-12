@@ -8,11 +8,11 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path='/reactjs' element={<Home />}>
+        <Route path='/reactjs' element={<div>Hola mundo</div>}>
         </Route>
-        <Route path='/' element={<Home />}>
+        <Route path='/' element={<div>Hola m3333undo</div>}>
         </Route>
-        <Route path='/Chess' element={<Chess />}>
+        <Route path='/Chess' element={<div>Hol4323434a mundo</div>}>
         </Route>
       </Routes>
     </HashRouter>
