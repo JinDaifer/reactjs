@@ -1,12 +1,12 @@
 import React from 'react';
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import {HashRouter, Link, Route, Routes} from 'react-router-dom';
 import './App';
 import Home from './Home';
 import Chess from './Chess';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/reactjs' element={<Home />}>
         </Route>
@@ -15,7 +15,7 @@ function App() {
         <Route path='/Chess' element={<Chess />}>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
