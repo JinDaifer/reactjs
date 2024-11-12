@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/reactjs.git/static/css/main.ca0647a1.chunk.css",
-    "main.js": "/reactjs.git/static/js/main.5da28a90.chunk.js",
-    "main.js.map": "/reactjs.git/static/js/main.5da28a90.chunk.js.map",
-    "runtime-main.js": "/reactjs.git/static/js/runtime-main.0de08787.js",
-    "runtime-main.js.map": "/reactjs.git/static/js/runtime-main.0de08787.js.map",
-    "static/js/2.c8b25181.chunk.js": "/reactjs.git/static/js/2.c8b25181.chunk.js",
-    "static/js/2.c8b25181.chunk.js.map": "/reactjs.git/static/js/2.c8b25181.chunk.js.map",
-    "static/js/3.bc5711c0.chunk.js": "/reactjs.git/static/js/3.bc5711c0.chunk.js",
-    "static/js/3.bc5711c0.chunk.js.map": "/reactjs.git/static/js/3.bc5711c0.chunk.js.map",
-    "index.html": "/reactjs.git/index.html",
-    "precache-manifest.384c52787ec5c6caec859a4731a6e4c5.js": "/reactjs.git/precache-manifest.384c52787ec5c6caec859a4731a6e4c5.js",
-    "service-worker.js": "/reactjs.git/service-worker.js",
-    "static/css/main.ca0647a1.chunk.css.map": "/reactjs.git/static/css/main.ca0647a1.chunk.css.map",
-    "static/js/2.c8b25181.chunk.js.LICENSE.txt": "/reactjs.git/static/js/2.c8b25181.chunk.js.LICENSE.txt"
+    "main.css": "/reactjs/static/css/main.ca0647a1.chunk.css",
+    "main.js": "/reactjs/static/js/main.bfd3c63c.chunk.js",
+    "main.js.map": "/reactjs/static/js/main.bfd3c63c.chunk.js.map",
+    "runtime-main.js": "/reactjs/static/js/runtime-main.d2dba425.js",
+    "runtime-main.js.map": "/reactjs/static/js/runtime-main.d2dba425.js.map",
+    "static/js/2.c8b25181.chunk.js": "/reactjs/static/js/2.c8b25181.chunk.js",
+    "static/js/2.c8b25181.chunk.js.map": "/reactjs/static/js/2.c8b25181.chunk.js.map",
+    "static/js/3.bc5711c0.chunk.js": "/reactjs/static/js/3.bc5711c0.chunk.js",
+    "static/js/3.bc5711c0.chunk.js.map": "/reactjs/static/js/3.bc5711c0.chunk.js.map",
+    "index.html": "/reactjs/index.html",
+    "precache-manifest.7c351bb4004aa78c10d3509faff6f9bb.js": "/reactjs/precache-manifest.7c351bb4004aa78c10d3509faff6f9bb.js",
+    "service-worker.js": "/reactjs/service-worker.js",
+    "static/css/main.ca0647a1.chunk.css.map": "/reactjs/static/css/main.ca0647a1.chunk.css.map",
+    "static/js/2.c8b25181.chunk.js.LICENSE.txt": "/reactjs/static/js/2.c8b25181.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0de08787.js",
+    "static/js/runtime-main.d2dba425.js",
     "static/js/2.c8b25181.chunk.js",
     "static/css/main.ca0647a1.chunk.css",
-    "static/js/main.5da28a90.chunk.js"
+    "static/js/main.bfd3c63c.chunk.js"
   ]
 }
