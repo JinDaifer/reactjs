@@ -1,21 +1,21 @@
 import React from 'react';
-import {HashRouter, Link, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import './App';
 import Home from './Home';
 import Chess from './Chess';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
-        <Route path='/reactjs' element={<div>Hola mundo</div>}>
+        <Route path='/reactjs' element={<Home/>}>
         </Route>
-        <Route path='/' element={<div>Hola m3333undo</div>}>
+        <Route path='/' element={<Home/>}>
         </Route>
-        <Route path='/Chess' element={<div>Hol4323434a mundo</div>}>
+        <Route path='/Chess' element={<Chess/>}>
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
