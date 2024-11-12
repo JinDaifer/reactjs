@@ -1,12 +1,11 @@
 import React from 'react';
-import {BrowserRouter, useLocation , Route, Routes} from 'react-router-dom';
+import {BrowserRouter , Route, Routes} from 'react-router-dom';
 import './App';
 import Home from './Home';
 import Chess from './Chess';
 
 function RouteWithLocation() {
-  const location = useLocation();
-  console.log("Ruta actual:", location.pathname);  // Muestra la ruta actual en la consola
+  console.log("Ruta actual:", process.env.PUBLIC_URL);  // Muestra la ruta actual en la consola
   return null;
 }
 
