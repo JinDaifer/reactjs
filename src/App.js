@@ -8,11 +8,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/reactjs' element={<Home/>}>
+        <Route path= {process.env.PUBLIC_URL +'/reactjs'} element={<Home/>}>
         </Route>
-        <Route path='/' element={<Home/>}>
+        <Route path={process.env.PUBLIC_URL +'/'} element={<Home/>}>
         </Route>
-        <Route path='/Chess' element={<Chess/>}>
+        <Route path={process.env.PUBLIC_URL +'/Chess'} element={<Chess/>}>
         </Route>
       </Routes>
     </BrowserRouter>
