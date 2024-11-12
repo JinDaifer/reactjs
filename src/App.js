@@ -14,9 +14,8 @@ function App() {
     <BrowserRouter>
       <RouteWithLocation />
       <Routes>
-        <Route path='/reactjs' element={<Home />} />
-        <Route path='/' element={<Home />} />
-        <Route path='/Chess' element={<Chess />} />
+        <Route path={process.env.PUBLIC_URL+'/'} element={<Home />} />
+        <Route path= {process.env.PUBLIC_URL+'/Chess'} element={<Chess />} />
       </Routes>
     </BrowserRouter>
   );

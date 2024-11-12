@@ -23,17 +23,46 @@ function App() {
           <img src= {process.env.PUBLIC_URL + '/img/Icon.png'} className='use-icon' alt='Profile icon'></img>
         </side>
         <nav className="Navigation-container">
-          <LinkBorderLineRouter href="/#home-title" content="Home" smooth={true}/>
-          <LinkBorderLineRouter href="/#cv-title" content="CV"  smooth={true}/>
-          <LinkBorderLineRouter href="/#features-title" content="Features"  smooth={true}/>
-          <LinkBorderLineRouter href="/#project-title" content="Projects"  smooth={true}/>
-          <LinkBorderLineRouter href="/#art-title" content="Art"  smooth={true}/>
-          <LinkBorderLineRouter href="/#contact-title" content="Contact" smooth={true} />
+        <LinkBorderLineRouter 
+          href={process.env.PUBLIC_URL + '/#home-title'} 
+          content="Home" 
+          smooth={true} 
+        />
+
+        <LinkBorderLineRouter 
+          href={process.env.PUBLIC_URL + '/#cv-title'} 
+          content="CV" 
+          smooth={true} 
+        />
+
+        <LinkBorderLineRouter 
+          href={process.env.PUBLIC_URL + '/#features-title'} 
+          content="Features" 
+          smooth={true} 
+        />
+
+        <LinkBorderLineRouter 
+          href={process.env.PUBLIC_URL + '/#project-title'} 
+          content="Projects" 
+          smooth={true} 
+        />
+
+        <LinkBorderLineRouter 
+          href={process.env.PUBLIC_URL + '/#art-title'} 
+          content="Art" 
+          smooth={true} 
+        />
+
+        <LinkBorderLineRouter 
+          href={process.env.PUBLIC_URL + '/#contact-title'} 
+          content="Contact" 
+          smooth={true} 
+        />
         </nav>
       </header>
 
       <main className="app-main">
-      <GodotGame/>
+        <GodotGame/>
       </main>
 
       <footer>
