@@ -152,6 +152,7 @@ function Home() {
               <section className='social-profile'>
                 <LinkBorderLine href="https://www.linkedin.com/in/daifer-ant-ramirez-ramirez-23a409326/" content="linkedin" />
                 <LinkBorderLine href="https://github.com/JinDaifer" content="GitHub" />
+                //<LinkBorderLine href="https://x.com/JinDaifer" content="Twitter" />
               </section>
               <section className='icon-profile'>
                 <img src={process.env.PUBLIC_URL + '/img/mi_s_face.jpg'} className='use-icon' alt='Profile icon'></img>
