@@ -150,7 +150,7 @@ function Home() {
           <section className='profile-contents'>
             <side className='side-icon-profile'>
               <section className='social-profile'>
-                <LinkBorderLine href="https://www.linkedin.com/in/daifer-ant-ramirez-ramirez-23a409326/" content="linkedin" />
+                <LinkBorderLine href="https://www.linkedin.com/in/daifer-ant-ramirez-ramirez-23a409326/" content="LinkedIn" />
                 <LinkBorderLine href="https://github.com/JinDaifer" content="GitHub" />
               </section>
               <section className='icon-profile'>
