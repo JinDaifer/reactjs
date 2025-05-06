@@ -1,8 +1,8 @@
 html {
   scroll-behavior: smooth; /* Aplica el desplazamiento suave */
   scroll-padding-top: 60px; /* Ajusta este valor al alto de tu header */
+  
 }
-
 .App {
   text-align: center;
   background-color: #282c34;
@@ -34,14 +34,25 @@ html {
   justify-content: center;
   color: #e9eaee;
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%; /* Ocupa todo el ancho de la pantalla */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para destacar el nav */
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+.app-main{
+  background-color: #282a35; /* Color dorado al hacer hover */
+  padding-top: 50px;  /* Altura del header */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+
 
 .App-link {
   color: #61dafb;
@@ -136,18 +147,6 @@ footer {
   color: gold; /* Color dorado al hacer hover */
 }
 
-.app-main{
-  background-color: #282a35; /* Color dorado al hacer hover */
-  min-height: 90vh;
-  width: 100%;
-  padding-top: 50px;  /* Altura del header */
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-}
-
-
 /*content card*/
 .content-card {
   display: flex;           /* Flexbox para el contenedor */
@@ -240,8 +239,17 @@ footer {
   width: 50%;
 }
 
-.sections-contents > h1 > hr{
-  border-color: silver;
+.hr-golden-shine {
+  border: none;
+  height: 4px;
+  background: linear-gradient(270deg, yellow, orange, #fefefe, orange, yellow);
+  background-size: 400% 100%;
+  animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 .sections-contents > section {
@@ -359,7 +367,6 @@ h3 {
 
 .sections-contents > .cd-section{
   display: flex;
-  width: 100%;
   background: #3d4a61;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 2px;
@@ -450,3 +457,48 @@ h3 {
   border-radius: 4px;
 }
 
+
+@media only screen and (max-width: 600px) {
+
+  .App-header {
+    flex-wrap: wrap;
+    left: auto;
+    width: auto;
+  }
+  .app-main{
+    background-color: #282a35; /* Color dorado al hacer hover */
+    padding-top: 1vh;  /* Altura del header */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /*section contents*/
+  .sections-contents-home{
+    width: 90%;
+  }
+  .sections-contents{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 90%;
+  }
+
+  .sections-contents > section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr)); /* Columnas dinámicas */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 16px; /* Espacio dentro del contenedor */
+    justify-items: center; /* Centrar los elementos dentro de sus celdas */
+  }
+
+  .contactForm, .sections-contents > .cd-section{
+    width: auto;
+  }
+  .contact-data{
+    flex-direction: column;
+    text-align: start;
+  }
+}

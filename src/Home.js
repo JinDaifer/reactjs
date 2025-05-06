@@ -145,7 +145,7 @@ function Home() {
 
       <main className="app-main">
         <section className='sections-contents-home' id='home-title'>
-          <h1>Home <hr></hr> </h1>
+          <h1>Home <hr className="hr-golden-shine"/> </h1>
 
           <section className='profile-contents'>
             <side className='side-icon-profile'>
@@ -176,7 +176,7 @@ function Home() {
         </section>
 
         <section className='sections-contents' id='cv-title'>
-          <h1>Curriculum <hr></hr> <span className='high-span'>My experience and knowledge</span>  </h1>
+          <h1>Curriculum <hr className="hr-golden-shine"/> <span className='high-span'>My experience and knowledge</span>  </h1>
           <section className='cd-section'>
             <Curriculum />
           </section>
@@ -184,7 +184,7 @@ function Home() {
 
 
         <section className='sections-contents' id='features-title'>
-          <h1>Features <hr></hr> <span className='high-span'>What I know</span>  </h1>
+          <h1>Features <hr className="hr-golden-shine"/> <span className='high-span'>What I know</span>  </h1>
 
           <section>
             <ContentCard imgPath="/img/godot_icon.png" title="Godot Engine" content="Creating immersive, high-performance games and interactive experiences with Godot Engine, leveraging GDScript for dynamic gameplay, 2D rendering, and intuitive scene management. Designed for rapid prototyping and scalable project development." useInterFiles={true} />
@@ -204,7 +204,7 @@ function Home() {
         </section>
 
         <section className='sections-contents' id='project-title'>
-          <h1>Projects <hr></hr> <span className='high-span'>What I Do</span>  </h1>
+          <h1>Projects <hr className="hr-golden-shine"/> <span className='high-span'>What I Do</span>  </h1>
           <section>
             <ContentCard imgPath="/img/acce_leralia.png" title="Mentoring Management" content="Connect mentors and mentees through streamlined scheduling and mentorship management. Book sessions, track progress, and maximize growth with tailored mentor-mentee interactions." useInterFiles={true}/>
             <ContentCard imgPath="/img/f_run.gif" title="Journey to be a god: Tower of time" content="An RPG I'm working on, set in a Chinese fantasy world. I don't think I'll finish it anytime soon, but I believe I'm on the right track." useInterFiles={true}/>
@@ -213,7 +213,7 @@ function Home() {
         </section>
 
         <section className='sections-contents' id='art-title'>
-          <h1>Art <hr></hr> <span className='high-span'>My drawing collection</span>  </h1>
+          <h1>Art <hr className="hr-golden-shine"/> <span className='high-span'>My drawing collection</span>  </h1>
           <section>
             <ContentCard imgPath="/img/Han li.png" title="Han li" content="A fanart of 'Record of a Deadly Journey to Immortality'" useInterFiles={true}/>
             <ContentCard imgPath="/img/Lady Lin.png" title="Lady Lin" content="A fanart of... It was a long time ago" useInterFiles={true}/>
@@ -228,7 +228,7 @@ function Home() {
         </section>
 
       <section className='sections-contents' id='contact-title'>
-        <h1>Contact <hr></hr> <span className='high-span'>If you are interested, contact me here.</span>  </h1>
+        <h1>Contact <hr className="hr-golden-shine"/> <span className='high-span'>If you are interested, contact me here.</span>  </h1>
           <ContactForm />
       </section>
 
@@ -241,7 +241,7 @@ function Home() {
           <section className='contact-data'>
             <LinkBorderLine href="" content="daiferramirez@gmail.com" />
             <LinkBorderLine href="" content="+34 653 84 81 46" />
-            <LinkBorderLine href="" content="PG. Urrutia 94-96, 08031" />
+            <LinkBorderLine href="" content="Barcelona, PG. Urrutia 94-96, 08031" />
           </section>
         </div>
       </footer>
